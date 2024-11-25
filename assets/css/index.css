@@ -1,0 +1,301 @@
+:root {
+    --light-color: #e5e6e7;
+    --primary-color: #222222;
+    --secondary-color: #009688;
+  }
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  body{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+  }
+  
+  /* Default styling for large screens (Desktop) */
+  .container .row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Add some space between image and content */
+    padding: 20px 0px;
+  }
+  
+  /* Styling for heading and description */
+  .heading {
+    font-size: 30px;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Style for hero section */
+  .hero {
+    width: 100%;
+    height: 100vh;
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.8), 
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../images/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  
+  /* Style for navbar section */
+  .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0; /* Set TOP and BOTTOM margin to 35  and LEFT and RIGHT margin to 0px */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .site-title{
+    cursor: pointer;
+    color: var(--light-color)
+  }
+  
+  .navbar ul li{
+    list-style: none;
+    font-weight: 500;
+    font-size: 15px;
+    display: inline-block;
+    margin: 0 20px; /* Set TOP and BOTTOM margin to 0  and LEFT and RIGHT margin to 20px */
+    position: relative;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: var(--light-color);
+    text-transform: uppercase;
+  }
+  
+  .navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  
+  .navbar ul li:hover::after{
+    width: 100%;
+  }
+  
+  /* Style for hero content section */
+ .content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: var(--light-color);
+ }
+ .content h1{
+  font-size: 50px;
+  margin-top: 80px;
+ }
+ .content p{
+  margin: 20px auto; /*set margin 20px on the top and bottom */
+  font-weight: 100;
+  line-height: 35px;
+ }
+ button{
+  width: 200px;
+  padding: 15px 0px;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+  color: var(--light-color);
+  cursor: pointer;
+  position: relative;
+ }
+ span{
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+ }
+button:hover span{
+  width: 100%;
+}
+  button:hover{
+   border: none;
+  }
+  
+  /* Add styles for the hamburger menu icon */
+  i.fa.fa-bars{
+    color: var(--light-color);
+    cursor: pointer;
+  }
+  
+  #menu-icon {
+    display: none; /* Hide the hamburger icon on desktop */
+  }
+  
+  /* Style for about us section */
+  .about-img{
+    flex: 1;
+  }
+  .container .row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+
+  }
+  .responsive-image{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .about-content{
+    flex: 2;
+  }
+
+/* gallery-section styles */
+  .row-image {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .row-image img {
+    margin: 10px;
+    width:100px;
+    flex: 1;
+    /* height: auto; */
+    border-radius: 5px;
+  }
+
+  .row-image img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
+  }
+  #gallery-section {
+    margin-top: 5rem;
+  }
+  #gallery-section h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .contact-form h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  flex: 1;
+}
+.contact-form{
+  padding: 20px;
+  margin-top: 50px;
+}
+.footer-section{
+  background-color: var(--light-color);
+  color: var(--primary-color);
+  padding: 20px;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-right{
+  display: flex;
+  gap: 20px;
+  
+}
+.footer-right .fa{
+cursor: pointer;
+}
+
+
+  /* Add responsive styles for the navbar */
+  @media (max-width: 768px) {
+    #menu-icon {
+      display: block; /* Show the hamburger icon on mobile/tablet */
+    }
+  
+    .navbar{
+      position: relative;
+      z-index: 999;
+    }
+    .navbar ul {
+      flex-direction: column;
+      line-height: 30px;
+      position: absolute;
+      top: 90px;
+      right: 38px;
+      left: 38px;
+      background: var(--secondary-color);
+      padding: 20px 20px;
+      border-radius: 5px;
+      transform: 0.5s;
+    }
+    .content h1{
+      font-size: 35px;
+    }
+    .container .row{
+      flex-direction: column;
+      align-items: center;
+    }
+    .about-img,.about-content{
+      width: 100%;
+      text-align: center;
+    }
+    .responsive-image{
+      max-width: 80%;
+      margin-bottom: 20px;
+    }
+}

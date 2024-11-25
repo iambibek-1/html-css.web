@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio website</title>
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+  </head>
+  <body>
+    <!-- Start of hero and header section -->
+    <div class="hero">
+      <!--Start of header section -->
+      <header>
+        <div class="navbar">
+          <h2 class="site-title">LOGO</h2>
+          <div class="menu-icon" id="menu-icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Gallery</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- End of header section -->
+    </div>
+    <!-- start of hero content section -->
+    <div class="content">
+      <h1>
+        I'M <br />
+        Developer | Freelancer | Photographer
+      </h1>
+      <p>
+        A versatile individual skilled in website development, freelancing and
+        pursuing photography as a side hobby.
+      </p>
+
+      <button type="button"><span></span>Know More</button>
+      <button type="button"><span></span>Contact</button>
+    </div>
+    <!-- end of hero content section -->
+    <main>
+      <!-- start of about-us section -->
+      <div class="container">
+        <div class="row">
+          <div class="about-img">
+            <img
+              src="./assets/images/about-us.png"
+              alt=""
+              class="responsive-image"
+            />
+          </div>
+          <div class="about-content">
+            <h4 class="heading">About</h4>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Obcaecati, facilis fugit expedita fugiat odit nemo praesentium,
+              esse hic veniam delectus pariatur. Nisi quis ipsam molestiae
+              magni! Optio et nostrum mollitia. Cum ea maxime, soluta laborum
+              delectus quaerat magni officia eum? Ullam iure voluptatum velit
+              ipsum sit sapiente, odit maxime perspiciatis natus dolorum quis
+              ratione eum quas blanditiis nostrum! Voluptas, saepe?
+            </p>
+            <button type="button"><span></span>Read More</button>
+          </div>
+        </div>
+      </div>
+      <!-- end of about-us section -->
+    </main>
+    <!-- Gallery Section -->
+
+    <div id="gallery-section" class="gallery-section">
+      <div class="container">
+        <div id="gallery-section" class="gallery-row">
+          <h4 class="heading">Gallery</h4>
+          <div class="row-image">
+            <img src="./assets/images/image-1.jpg" class="img-fluid" />
+            <img src="./assets/images/image-2.jpg" class="img-fluid" />
+            <img src="./assets/images/image-3.jpg" class="img-fluid" />
+            <img src="./assets/images/image-7.jpg" class="img-fluid" />
+          </div>
+          <div class="row-image">
+            <img src="./assets/images/image-4.jpg" class="img-fluid" />
+            <img src="./assets/images/image-5.jpg" class="img-fluid" />
+            <img src="./assets/images/image-6.jpg" class="img-fluid" />
+            <img src="./assets/images/image-5.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact form -->
+    <div class="container contact-form">
+      <h4>Contact us</h4>
+      <form>
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+
+        <button type="button"><span></span>Submit</button>
+      </form>
+    </div>
+
+    <!-- footer section -->
+     <div class="footer-section">
+      <div class="footer-content">
+        <div class="footer-left">
+          @Copyright, All right reserved
+        </div>
+        <div class="footer-right">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+
+        </div>
+      </div>
+     </div>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
